@@ -9,25 +9,11 @@
             Dado que eu acesse a página de checkout
 
             Cenário: Todos os dados obrigatórios preenchidos
-            Quando eu digitar o nome "Alexsander"
-            E o sobrenome "James"
-            E o país "Brasil"
-            E o endereço "Rua Irajá 53"
-            E a cidade "Jandira"
-            E o CEP "06624-120"
-            E o telefone "11 98663-8700"
-            E o e-mail "felicianoalex402@gmail.com"
+            Quando eu digitar o nome "Alexsander" e o sobrenome "James" e o país "Brasil" e o endereço "Rua Irajá 53" e a cidade "Jandira" e o CEP "06624-120" e o telefone "11 98663-8700" e o e-mail "felicianoalex402@gmail.com"
             Então deve finalizar a compra e aparecer a mensagem "Obrigado pela compra Alexsander"
 
             Esquema do Cenário: Multiplos dados obrigatórios preenchidos
-            Quando eu digitar <nome>
-            E <sobrenome>
-            E <pais>
-            E <endereco>
-            E <cidade>
-            E <cep>
-            E <telefone>
-            E <email>
+            Quando eu digitar <nome> e <sobrenome> e <pais> e <endereco> e <cidade> e <cep> e <telefone> e <email>
             Então deve finalizar a compra e exibir a <mensagem>
 
             Exemplos:
@@ -40,7 +26,5 @@ Quando eu digitar o e-mail "@gmail.comfelicianoalex"
 Então deve aparecer a mensagem "Formato de e-mail inválido"
 
 Cenário: Campos obrigatórios vazios
-Quando eu preencher o nome "Alexsander"
-E o sobrenome "James"
-E clicar em cadastrar
+Quando deixar de preencher algum campo obrigatório
 Então deve aparecer a mensagem de alerta "Campos obrigatórios não preenchidos"
