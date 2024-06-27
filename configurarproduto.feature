@@ -9,8 +9,7 @@
             Dado que eu acesse a pagina do produto
 
             Cenário: Seleção de cor, tamanho e quantidade obrigatórios
-            Quando eu selecionar a "cor"
-            E "quantidade"
+            Quando eu deixar de selecionar a "cor" ou "quantidade" ou "ttamanho"
             Então deve exibir a mensagem "É obrigatório selecionar o tamanho, cor e quantidade do produto"
 
             Cenário: Permitir apenas 10 produtos por venda
